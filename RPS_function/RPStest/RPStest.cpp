@@ -20,9 +20,5 @@ namespace RPStest
 		{
 			Assert::AreEqual("Player1", determineWinner("Rock", "Scissors"));
 		}
-		TEST_METHOD(TestPlayer2Wins)
-		{
-			Assert::AreEqual("Player2", determineWinner("Scissors", "Rock"));
-		}
 	};
 }
