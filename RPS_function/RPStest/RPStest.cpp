@@ -20,5 +20,6 @@ namespace RPStest
 		{
 			Assert::AreEqual("Player1", determineWinner("Rock", "Scissors"));
 		}
+		
 	};
 }
