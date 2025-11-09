@@ -14,7 +14,7 @@ namespace RPStest
 		
 		TEST_METHOD(TestDraw)
 		{
-			Assert::AreEqual("player1", determineWinner("Rock", "Rock"));
+			Assert::AreEqual("Draw", determineWinner("Rock", "Rock"));
 		}
 	};
 }
