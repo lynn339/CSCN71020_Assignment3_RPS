@@ -24,5 +24,9 @@ namespace RPStest
 		{
 			Assert::AreEqual("Player2", determineWinner("Paper", "Scissors"));
 		}
+		TEST_METHOD(TestInvalidInput)
+		{
+			Assert::AreEqual("Invalid", determineWinner("rock", "Paper"));
+		}
 	};
 }
