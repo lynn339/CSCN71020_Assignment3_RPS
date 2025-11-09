@@ -1,0 +1,20 @@
+#include "pch.h"
+#include "CppUnitTest.h"
+extern "C" {
+#include "../RPS_function/RPS_function.h"
+}
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace RPStest
+{
+	TEST_CLASS(RPStest)
+	{
+	public:
+		
+		TEST_METHOD(TestDraw)
+		{
+			Assert::AreEqual("player1", determineWinner("Rock", "Rock"));
+		}
+	};
+}
