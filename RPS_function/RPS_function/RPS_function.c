@@ -1,6 +1,12 @@
 #include <string.h>
 #include "RPS_function.h"
 
+int isValidChoice(const char* choice) {
+    return strcmp(choice, "Rock") == 0 ||
+        strcmp(choice, "Paper") == 0 ||
+        strcmp(choice, "Scissors") == 0;
+} // Helper function to validate choices
+
 
 const char* determineWinner(const char* player1, const char* player2)
 {
